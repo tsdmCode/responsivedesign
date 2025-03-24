@@ -1,21 +1,33 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  color: ;
+:root {
+  --blue: #3b5491;
+  --lightblue: #5f7ecb;
+  --green: #009bb0;
+  --lightgreen: #aedde3;
+  --orange: #ff7c35;
+  --lightorange: #ff9a63;
+  --black: #444444;
+  --gray: #999999;
 }
+/* TODO: fix fonts */
+body {
+  margin: 0;
+}
+
+/* #region HEADER */
 #header {
   position: relative; /* This makes child absolute positioning relative to the header */
-  display: inline-block; /* This makes the header only as wide as its content */
+  width: 100%;
 }
 
 #headerImg {
   display: block; /* Removes any default spacing below the image */
+  width: 100%;
 }
 
 #headerLogo {
   position: absolute;
   top: 0;
   left: 0;
-  /* Add some margin if needed */
   margin: 10px;
 }
 
@@ -23,26 +35,42 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  /* Add some margin if needed */
   margin: 10px;
 }
 
-/* Optional: Style the navigation items */
 #headerNav ul {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 15px; /* Space between menu items */
+  gap: 3rem;
 }
 
 #headerNav a {
-  color: white; /* Assuming dark background */
+  color: var(--lightgreen);
   text-decoration: none;
   font-weight: bold;
-  /* Add other styles as needed */
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
+/* #endregion */
+#subheaderOne {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+}
+#subheaderOne h2 {
+  color: var(--lightgreen);
+}
+#images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#images img {
+  width: 100%;
+}
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--green);
 }
