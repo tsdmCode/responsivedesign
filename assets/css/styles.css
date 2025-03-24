@@ -1,0 +1,23 @@
+#headerImg {
+  position: absolute;
+  width: 100%;
+}
+
+#headerLogo {
+  position: relative;
+  left: 5px;
+  top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  bottom: 0;
+  right: 0;
+}
+
+.listItem a {
+  text-decoration: none;
+}

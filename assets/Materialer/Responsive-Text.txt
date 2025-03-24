@@ -1,0 +1,138 @@
+
+Responsive Design (Header And Footer "Logo")
+**********************************************
+NAVIGATION:
+
+MOBILE DEVICES
+SCREENS
+MEDIAQUERIES
+MOBILE FIRST
+
+**********************************************
+
+INDHOLDS TEKST:
+________________________________________________________________________
+
+HTML vises også på mobile enheder
+Dit website skal fungere på mobil-enheder, og mindre skærme.
+
+<!--IMAGES-->
+
+Devices vs Desktop
+Omkring 2012 skiftede den andel af enheder der tilgik Internettet og Websites, fra "desktops" (Computere), til mobile enheder (Devices).
+
+I dag er det essentielt at din HTML ikke kun virker, men også er nemt at læse og navigere i på Mobile enheder.
+
+
+Computere har oftest et "fysisk skærmområde", altså den faktuelle "størrelse" på minimum 15 tommer, (Inch'es).
+
+Mobiltelefoner har på trods en mindre størrelse ofte lige så stor "opløsning" (Pixel-tæthed), altså samme opløsning på mindre område.
+
+
+Begreber i Responsive Deseign?
+Adaptive: (Groft sagt et “skræddersyet design” til definerede skærmstørrelser)
+Responsive: (”flydende” og “device uafhængigt” “Fits all”, ikke så præcist?)	
+Mobile First: (“Design strategi” hvor man tager udgangspunkt i Mobile Devices)
+________________________________________________________________________
+
+Tommer og Pixels?
+Lidt om Skærm-bredder og Viewports.
+
+Skærmbredder er i høj grad afhængig af den udvikling der er i gang på Hardware og specielt Mobil markedet.
+
+Mobiltelefoner og tablets kommer i et hav af størrelser og opløsninger, og kan vise HTML og APPs i både "Vandret" og "Lodret".
+
+
+"Pixeltætheden" (ppi) er et udtryk for skærmens opløsning, og er ikke et udtryk for den fysiske størrelse. Mobiltelefoner har oftest lige så høj, eller højere "opløsning" end Computerskærme.
+
+Du bruger “MediaQueries” til at angive det antal pixels der svarer til den fysiske bredde.
+
+Opløsning vs “Screen size”
+- Mobile Phones: Også kaldt “Small Devices”, Pixel Tæthed omkring 300ppi eller mere.
+- Tablets: “Medium Devices”, Pixel Tæthed omkring 190ppi eller mere.
+- Desktops: Pixel Tæthed 72ppi / eller mere. (	Macbook Pro Retina 220.53ppi )
+
+<!--IMAGES-->
+
+Opløsning vs “Screen size”
+
+Mobile Phones: Også kaldt “Small Devices”, Pixel Tæthed omkring 300ppi eller mere.
+Tablets: “Medium Devices”, Pixel Tæthed omkring 190ppi eller mere.
+Desktops: “Desktops”, Pixel Tæthed 72ppi / eller mere. (Macbook Pro Retina 220.53ppi)
+
+________________________________________________________________________
+
+Mediaqueries
+Om Breakpoints og Devices
+
+<!--IMAGES-->
+
+Mediaqueries bruges til at angive det antal pixels på din Computer skærm, der svarer til den fysiske størrelse devicet har?
+
+@media screen and (max-width: 800px) Træder i kraft under 800px på din cumputer skærm.
+@media screen and (min-width: 800px) Træder i kraft over 800px på din cumputer skærm.
+
+Meta Viewport?
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Hvis ikke du har “meta viewport” i dit head-tag så vil en nyere mobiltelefon vise dit website ud fra pixel tætheden (ppi) og IKKE “device-width”.
+
+Eksempel (Træder i kraft under 800 Pixels):
+@media screen and (max-width: 800px) {
+            body{
+            background-color: red;
+            }
+        }
+
+________________________________________________________________
+
+Mobile First
+Et udtryk for den “strategi” du bruger når du starter et projekt?
+
+<!--IMAGES-->
+
+Start “Bagfra”?
+Overblikket over det samlede projekt kan godt give udfordringer. Start evt. med “header og menu”?
+________________________________________________________________________
+FOOTER:
+
+Mere om fysiske størrelser:	https://screensiz.es/
+Mere om Opløsninger:		https://www.hobo-web.co.uk/best-screen-size/
+Statcounter:			https://gs.statcounter.com/
+
+**********************************************************************
+
+TYPOGRAFI:
+Heading One:
+Oswald
+Designed by Vernon Adams, Kalapi Gajjar, Cyreal
+Medium: 500; 85pt; #eeeeee; #aedde3;
+
+Heading Two:
+Roboto Condensed
+Designed by Christian Robertson
+Medium: 500; 50pt; #009bb0;
+
+Heading Three:
+Roboto Condensed
+Light - Kursive: 500; 40pt; #009bb0;
+
+Paragraphs:
+Roboto Condensed
+Medium: 500; 30pt; #444444; / #eeeeee;
+
+Navigation:
+Roboto Condensed
+Medium: 500; 26pt; #aedde3; / #eeeeee;
+
+**********************************************************************
+
+https://www.hobo-web.co.uk/best-screen-size/
+https://screensiz.es/
+
+https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide
+
+https://www.nemprogrammering.dk/Tutorials/responsive-webdesign/2-adaptive-responsive-mobile.php
+
+MOODLE:
+https://moodle.techcollege.dk/course/view.php?id=10669	(RESPONSIVE DESIGN OPGAVE)
+
