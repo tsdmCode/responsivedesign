@@ -9,14 +9,37 @@
   --gray: #999999;
 }
 /* TODO: fix fonts */
+
+/* #region GLOBAL */
 body {
   margin: 0;
 }
+
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--green);
+  margin-left: 1rem;
+}
+h1,
+h2,
+p {
+  margin-left: 1rem;
+}
+p {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+span {
+  color: var(--lightgreen);
+}
+/* #endregion */
 
 /* #region HEADER */
 #header {
   position: relative; /* This makes child absolute positioning relative to the header */
   width: 100%;
+  box-shadow: 0 0 10px 0 #444444;
 }
 
 #headerImg {
@@ -40,12 +63,13 @@ body {
 
 #headerNav ul {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 2rem;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0.5rem 2rem;
   display: flex;
-  gap: 3rem;
+  gap: 9rem;
 }
 
 #headerNav a {
@@ -55,11 +79,17 @@ body {
 }
 
 /* #endregion */
+
+/* #region subheaderone */
 #subheaderOne {
   margin-left: 1rem;
   font-size: 2.5rem;
 }
+#subheaderOne h1 {
+  margin-bottom: 0;
+}
 #subheaderOne h2 {
+  margin-top: 0;
   color: var(--lightgreen);
 }
 #images {
@@ -69,8 +99,11 @@ body {
 #images img {
   width: 100%;
 }
-h1,
-h2 {
-  font-family: 'Oswald', sans-serif;
-  color: var(--green);
+/* #endregion */
+#devDesk > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#devDesk h2 {
+  font-size: 4rem;
 }
