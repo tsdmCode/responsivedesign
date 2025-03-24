@@ -1,23 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: ;
+}
+#header {
+  position: relative; /* This makes child absolute positioning relative to the header */
+  display: inline-block; /* This makes the header only as wide as its content */
+}
+
 #headerImg {
-  position: absolute;
-  width: 100%;
+  display: block; /* Removes any default spacing below the image */
 }
 
 #headerLogo {
-  position: relative;
-  left: 5px;
-  top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Add some margin if needed */
+  margin: 10px;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  position: relative;
-  list-style-type: none;
+#headerNav {
+  position: absolute;
   bottom: 0;
   right: 0;
+  /* Add some margin if needed */
+  margin: 10px;
 }
 
-.listItem a {
+/* Optional: Style the navigation items */
+#headerNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Space between menu items */
+}
+
+#headerNav a {
+  color: white; /* Assuming dark background */
   text-decoration: none;
+  font-weight: bold;
+  /* Add other styles as needed */
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
 }
