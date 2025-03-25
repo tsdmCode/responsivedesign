@@ -24,18 +24,28 @@ h2 {
 }
 h1,
 h2,
+h3,
 p {
   margin-left: 1rem;
 }
 p {
-  font-size: 2.5rem;
+  color: #444444;
+  font-size: 30pt;
+  font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
 h2 {
   color: var(--lightgreen);
+  font-weight: 500;
+  font-size: 50pt;
+  color: #009bb0;
 }
-section header h2 {
-  font-size: 4rem;
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 40pt; /* Font size */
+  color: #009bb0; /* Text color */
 }
 span {
   color: var(--lightgreen);
@@ -108,6 +118,10 @@ span {
 }
 /* #endregion */
 
+/* #region subheaderTwo */
+
+/* #endregion */
+
 /* #region grid */
 .content {
   display: grid;
@@ -140,12 +154,10 @@ span {
 .secImage {
   width: 100%;
 }
-.sectionHeader h1 {
-  font-size: 2.5rem;
+.sectionHeader h2 {
   margin-bottom: 0;
 }
-.sectionHeader h2 {
-  font-size: 2rem;
+.sectionHeader h3 {
   margin-top: 0;
 }
 

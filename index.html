@@ -33,13 +33,13 @@
         <h2><em>Dit website skal fungere på mobil-enheder, og mindre skærme.</em></h2>
       </header>
       <section class="images">
-        <img src="./assets/Materialer/images/Image-Adaptive.png" alt="" />
-        <img src="./assets/Materialer/images/Image-Responsive.png" alt="" />
-        <img src="./assets/Materialer/images/Image-Mobile-First.png" alt="" />
+        <img src="./assets/Materialer/images/Image-Adaptive.png" alt="et billede" />
+        <img src="./assets/Materialer/images/Image-Responsive.png" alt="et billede mere" />
+        <img src="./assets/Materialer/images/Image-Mobile-First.png" alt="det sidste billede" />
       </section>
       <section id="devDesk">
         <header>
-          <h2>Devices vs Desktop</h2>
+          <h2 >Devices vs Desktop</h2>
         </header>
         <div class="content">
           <p>
@@ -62,7 +62,7 @@
         </div>
       </section>
       <section id="subheaderTwo">
-        <header class="sectionHeader"><h1>Begreber i Responsive Design?</h1></header>
+        <header class="sectionHeader"><h2>Begreber i Responsive Design?</h2></header>
         <div class="grid-section">
           <div class="grid-item">
             <p>
@@ -88,9 +88,9 @@
         </div>
       </section>
       <section id="subheaderThree">
-        <header id="subheaderOne">
-          <h1>Tommer og Pixels</h1>
-          <h2><em>Lidt om Skærm-bredder og Viewports.</em></h2>
+        <header class="sectionHeader">
+          <h2>Tommer og Pixels</h2>
+          <h3>Lidt om Skærm-bredder og Viewports.</h3>
         </header>
         <div class="content">
           <p>Skærmbredder er i høj grad afhængig af den udvikling der er i gang på Hardware og specielt Mobil markedet.
@@ -109,7 +109,7 @@ Du bruger “MediaQueries” til at angive det antal pixels der svarer til den f
         <img src="assets/Materialer/images/Screen-Desktop.png" alt=""><img src="assets/Materialer/images/Screen-Tablets.png" alt=""><img src="assets/Materialer/images/Screen-Mobile.png" alt="">
       </section>
       <section id="subheaderFour">
-        <header class="sectionHeader"><h1>Opløsning vs. "Screen Size"</h1></header>
+        <header class="sectionHeader"><h2>Opløsning vs. "Screen Size"</h2></header>
         <div class="grid-section">
           <div class="grid-item">
             <p>
@@ -136,19 +136,19 @@ Du bruger “MediaQueries” til at angive det antal pixels der svarer til den f
       </section>
       <section id="subheaderFive" >
         <header class="sectionHeader">
-          <h1>Mediaqueries</h1>
-          <h2><em>Om Breakpoints og Devices</em></h2>
+          <h2>Mediaqueries</h2>
+          <h3><em>Om Breakpoints og Devices</em></h3>
         </header>
         <img class="secImage" src="assets/Materialer/images/Media-Screen.png" alt="">
-        <h2><em>Mediaqueries bruges til at angive det antal pixels på din Computer skærm, der svarer til den fysiske størrelse devicet har?</em></h2>
+        <h3><em>Mediaqueries bruges til at angive det antal pixels på din Computer skærm, der svarer til den fysiske størrelse devicet har?</em></h3>
         <p>@media screen and (<span>max-width:</span> 800px) Træder i kraft <span>under 800px</span> på din computer skærm.</p>
         <p>@media screen and (<span>min-width</span>: 800px) Træder i kraft <span>over 800px</span> på din computer skærm.</p>
 
-        <h1>Meta Viewport?</h1>
-        <h2>&#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;</h2>
-        Hvis ikke du har “meta viewport” i dit head-tag så vil en nyere mobiltelefon vise dit website ud fra pixel tætheden (ppi) og IKKE “device-width”.
+        <h2>Meta Viewport?</h2>
+        <h3>&#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;</h3>
+        <p>Hvis ikke du har “meta viewport” i dit head-tag så vil en nyere mobiltelefon vise dit website ud fra pixel tætheden (ppi) og IKKE “device-width”.</p>
 
-<h2><em>Eksempel (Træder i kraft under 800 Pixels):</em></h2>
+<h3><em>Eksempel (Træder i kraft under 800 Pixels):</em></h3>
 <code>
   <pre>
   <span class="codeSpan">@media screen and (max-width: 800px) {</span>
@@ -162,8 +162,8 @@ Du bruger “MediaQueries” til at angive det antal pixels der svarer til den f
       </section>
       <section id="subheaderSix">
         <header class="sectionHeader">
-          <h1>Mobile First</h1>
-          <h2><em>Et udtryk for den "strategi" du bruger når du starter</em></h2>
+          <h2>Mobile First</h2>
+          <h3><em>Et udtryk for den "strategi" du bruger når du starter</em></h3>
         </header>
         <div id="mobileImages">
           
@@ -171,19 +171,21 @@ Du bruger “MediaQueries” til at angive det antal pixels der svarer til den f
           <img src="assets/Materialer/images/Mobile-First.png" alt="" class="secImage">
         </div>
         <header class="sectionHeader">
-          <h1>Start “Bagfra”?</h1>
-          <h2>Overblikket over det samlede projekt kan godt give udfordringer. Start evt. med “header og menu”?</h2>
+          <h2>Start “Bagfra”?</h2>
+          <h3>Overblikket over det samlede projekt kan godt give udfordringer. Start evt. med “header og menu”?</h3>
         </header>
       </section>
     </main>
     <footer>
-      <p>Mere om fysiske størrelser: <br/>
-      <a href="https://screensiz.es">https://screensiz.es</a></p>
-      <p>Mere om opløsninger: <br/>
-      <a href="https://www.hobo-web.co.uk/best-screen-size/">https://www.hobo-web.co.uk/best-screen-size/</a></p>
-      <p>Mere om fysiske størrelser: <br/>
-      <a href="https://gs.statcounter.com/">https://gs.statcounter.com/</a></p>
-      <img src="assets/Materialer/HeaderThing/Logo.png" id="footerLogo" alt="">
+      <div id="linkCollection">
+        <p>Mere om fysiske størrelser: <br/>
+        <a href="https://screensiz.es">https://screensiz.es</a></p>
+        <p>Mere om opløsninger: <br/>
+        <a href="https://www.hobo-web.co.uk/best-screen-size/">https://www.hobo-web.co.uk/best-screen-size/</a></p>
+        <p>Mere om fysiske størrelser: <br/>
+        <a href="https://gs.statcounter.com/">https://gs.statcounter.com/</a></p>
+        <img src="assets/Materialer/HeaderThing/Logo.png" id="footerLogo" alt="">
+      </div>
     </footer>
   </body>
 </html>
