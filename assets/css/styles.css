@@ -16,6 +16,13 @@ a {
   text-decoration: none;
   color: var(--lightgreen);
 }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 85pt;
+  color: var(--lightgreen);
+}
 h1,
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -94,7 +101,10 @@ span {
   text-decoration: none;
   font-weight: bold;
 }
-
+#headerNav a:hover {
+  color: #eeeeee;
+  background-color: var(--lightblue);
+}
 /* #endregion */
 
 /* #region subheaderone */
@@ -102,10 +112,10 @@ span {
   margin-left: 1rem;
   font-size: 2.5rem;
 }
-#subheaderOne h1 {
+#subheaderOne h2 {
   margin-bottom: 0;
 }
-#subheaderOne h2 {
+#subheaderOne h3 {
   margin-top: 0;
   color: var(--lightgreen);
 }
@@ -190,10 +200,143 @@ footer {
 }
 #footerLogo {
   position: absolute;
-  display: block;
-  bottom: 0;
-  right: 0;
-  margin-top: 1rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 1rem;
+}
+#linkCollection {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#linkCollection p {
+  color: #eeeeee;
+}
+/* #endregion */
+
+/* Base styles (default for larger screens) */
+/* Already defined styles remain unchanged */
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Devices (width between 768px and 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #headerLogo {
+  }
+
+  #headerNav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  #headerNav ul {
+    gap: 4rem;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 60pt; /* Reduce heading size */
+  }
+
+  h2 {
+    font-size: 40pt; /* Adjust subheading size */
+  }
+
+  h3 {
+    font-size: 30pt; /* Adjust smaller heading size */
+  }
+
+  .images {
+    grid-template-columns: 1fr 1fr; /* Show two images per row */
+  }
+
+  #mobileImages img {
+    width: 100%; /* Reduce image size for better fit */
+    margin: 0 auto; /* Center images */
+  }
 }
 
-/* #endregion */
+/* Mobile Devices (width below 768px) */
+@media screen and (max-width: 768px) {
+  #header {
+    position: relative;
+    text-align: start; /* Center content inside the header */
+  }
+
+  #headerImg {
+    position: absolute; /* Make the image act as a background */
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Ensure it stays behind other elements */
+  }
+
+  #headerLogo {
+    position: relative;
+    margin: 1rem auto; /* Center the logo horizontally */
+    display: block;
+    z-index: 2; /* Ensure it appears above the background image */
+  }
+
+  #headerNav {
+    position: relative;
+    margin: 1rem auto; /* Center the navigation */
+    z-index: 2; /* Ensure it appears above the background image */
+    margin-left: 1rem;
+  }
+
+  #headerNav ul {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 0.5rem; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #headerNav a {
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    color: var(--lightgreen);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 40pt; /* Reduce heading size for mobile */
+  }
+
+  h2 {
+    font-size: 30pt; /* Adjust subheading size */
+  }
+
+  h3 {
+    font-size: 20pt; /* Adjust smaller heading size */
+  }
+
+  .images {
+    grid-template-columns: 1fr; /* Show one image per row */
+  }
+
+  #mobileImages img {
+    width: 100%; /* Make images take full width */
+    margin: 0; /* Remove extra spacing */
+  }
+
+  footer {
+    text-align: start; /* Center footer content */
+    padding: 1rem;
+  }
+
+  #footerLogo {
+    position: static; /* Remove absolute positioning */
+    margin: 1rem auto; /* Center the logo */
+  }
+  .content {
+    display: flex; /* Switch to flexbox for better control */
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Add spacing between items */
+  }
+  #linkCollection {
+    padding: 0.5rem;
+  }
+}
