@@ -28,11 +28,11 @@
       </nav>
     </header>
     <main>
-      <header id="subheaderOne">
+      <header id="subheaderOne" class="sectionHeader">
         <h1>HTML vises også på mobile enheder.</h1>
         <h2><em>Dit website skal fungere på mobil-enheder, og mindre skærme.</em></h2>
       </header>
-      <section id="images">
+      <section class="images">
         <img src="./assets/Materialer/images/Image-Adaptive.png" alt="" />
         <img src="./assets/Materialer/images/Image-Responsive.png" alt="" />
         <img src="./assets/Materialer/images/Image-Mobile-First.png" alt="" />
@@ -41,7 +41,7 @@
         <header>
           <h2>Devices vs Desktop</h2>
         </header>
-        <div>
+        <div class="content">
           <p>
             Omkring 2012 skiftede den andel af enheder der tilgik Internettet og Websites, fra "desktops" (Computere),
             til mobile enheder (Devices).
@@ -61,6 +61,90 @@
           </p>
         </div>
       </section>
+      <section id="subheaderTwo">
+        <header class="sectionHeader"><h1>Begreber i Responsive Design?</h1></header>
+        <div class="grid-section">
+          <div class="grid-item">
+            <p>
+              -
+              <span>Adaptive</span>
+            </p>
+            <p>(Groft sagt et “skræddersyet design” til definerede skærmstørrelser)</p>
+          </div>
+          <div class="grid-item">
+            <p>
+              -
+              <span>Responsive</span>
+            </p>
+            <p>(”flydende” og “device uafhængigt” “Fits all”, ikke så præcist?)</p>
+            </div>
+            <div class="grid-item" />
+            <p>
+              -
+              <span>Mobile First</span>
+            </p>
+            <p>(“Design strategi” hvor man tager udgangspunkt i Mobile Devices)</p>
+          </div>
+        </div>
+      </section>
+      <section id="subheaderThree">
+        <header id="subheaderOne">
+          <h1>Tommer og Pixels</h1>
+          <h2><em>Lidt om Skærm-bredder og Viewports.</em></h2>
+        </header>
+        <div class="content">
+          <p>Skærmbredder er i høj grad afhængig af den udvikling der er i gang på Hardware og specielt Mobil markedet.
+            <br />
+            <br />
+            Mobiltelefoner og tablets kommer i et hav af størrelser og opløsninger, og kan vise HTML og APPs i både "Vandret" og "Lodret".</p>
+          <p>
+            "Pixeltætheden" (ppi) er et udtryk for skærmens opløsning, og er ikke et udtryk for den fysiske størrelse. Mobiltelefoner har oftest lige så høj, eller højere "opløsning" end Computerskærme.
+            <br />
+            <br />
+Du bruger “MediaQueries” til at angive det antal pixels der svarer til den fysiske bredde.
+          </p>
+        </div>
+      </section>
+      <section class="images">
+        <img src="assets/Materialer/images/Screen-Desktop.png" alt=""><img src="assets/Materialer/images/Screen-Tablets.png" alt=""><img src="assets/Materialer/images/Screen-Mobile.png" alt="">
+      </section>
+      <section id="subheaderFour">
+        <header class="sectionHeader"><h1>Opløsning vs. "Screen Size"</h1></header>
+        <div class="grid-section">
+          <div class="grid-item">
+            <p>
+              -
+              <span>Mobile Phones:</span>
+            </p>
+            <p>Også kaldt “Small Devices”, Pixel Tæthed omkring 300ppi eller mere.</p>
+          </div>
+          <div class="grid-item">
+            <p>
+              -
+              <span>Tablets:</span>
+            </p>
+            <p>“Medium Devices”, Pixel Tæthed omkring <span>190ppi</span> eller mere.</p>
+            </div>
+            <div class="grid-item" />
+            <p>
+              -
+              <span>Desktops:</span>
+            </p>
+            <p>Pixel Tæthed <span>72ppi</span> / eller mere. (	Macbook Pro Retina 220.53ppi )</p>
+          </div>
+        </div>
+      </section>
+      <section id="subheaderFive" >
+        <header class="sectionHeader">
+          <h1>Mediaqueries</h1>
+          <h2><em>Om Breakpoints og Devices</em></h2>
+        </header>
+        <img class="secImage" src="assets/Materialer/images/Media-Screen.png" alt="">
+        <h2><em>Mediaqueries bruges til at angive det antal pixels på din Computer skærm, der svarer til den fysiske størrelse devicet har?</em></h2>
+        <p>@media screen and (<span>max-width:</span> 800px) Træder i kraft <span>under 800px</span> på din computer skærm.</p>
+<p>@media screen and (<span>min-width</span>: 800px) Træder i kraft <span>over 800px</span> på din computer skærm.</p>
+      </section>
+      
     </main>
   </body>
 </html>
