@@ -14,6 +14,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--lightgreen);
 }
 h1,
 h2 {
@@ -157,6 +158,8 @@ code {
 .codeSpan {
   color: var(--blue);
 }
+
+/* #endregion */
 #mobileImages {
   display: flex; /* Ensure the images are aligned horizontally */
   flex-direction: column;
@@ -167,7 +170,18 @@ code {
   margin: 0;
   padding: 0;
 }
-
+/* #region footer */
 footer {
   background-color: var(--blue);
+  position: relative;
+  font-family: 'Roboto Condensed';
 }
+#footerLogo {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  margin-top: 1rem;
+}
+
+/* #endregion */
