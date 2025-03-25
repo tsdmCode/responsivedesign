@@ -142,9 +142,45 @@ Du bruger “MediaQueries” til at angive det antal pixels der svarer til den f
         <img class="secImage" src="assets/Materialer/images/Media-Screen.png" alt="">
         <h2><em>Mediaqueries bruges til at angive det antal pixels på din Computer skærm, der svarer til den fysiske størrelse devicet har?</em></h2>
         <p>@media screen and (<span>max-width:</span> 800px) Træder i kraft <span>under 800px</span> på din computer skærm.</p>
-<p>@media screen and (<span>min-width</span>: 800px) Træder i kraft <span>over 800px</span> på din computer skærm.</p>
+        <p>@media screen and (<span>min-width</span>: 800px) Træder i kraft <span>over 800px</span> på din computer skærm.</p>
+
+        <h1>Meta Viewport?</h1>
+        <h2>&#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;</h2>
+        Hvis ikke du har “meta viewport” i dit head-tag så vil en nyere mobiltelefon vise dit website ud fra pixel tætheden (ppi) og IKKE “device-width”.
+
+<h2><em>Eksempel (Træder i kraft under 800 Pixels):</em></h2>
+<code>
+  <pre>
+  <span class="codeSpan">@media screen and (max-width: 800px) {</span>
+    body{
+    background-color: red;
+    }
+    }
+  </pre>
+</code>
+
       </section>
-      
+      <section id="subheaderSix">
+        <header class="sectionHeader">
+          <h1>Mobile First</h1>
+          <h2><em>Et udtryk for den "strategi" du bruger når du starter</em></h2>
+        </header>
+        <div id="mobileImages">
+          
+          <img src="assets/Materialer/images/Desktop-First.png" alt="" class="secImage">
+          <img src="assets/Materialer/images/Mobile-First.png" alt="" class="secImage">
+        </div>
+        Start “Bagfra”?
+Overblikket over det samlede projekt kan godt give udfordringer. Start evt. med “header og menu”? 
+      </section>
     </main>
+    <footer>
+      <p>Mere om fysiske størrelser: <br/>
+      <a href="https://screensiz.es">https://screensiz.es</a></p>
+      <p>Mere om opløsninger: <br/>
+      <a href="https://www.hobo-web.co.uk/best-screen-size/">https://www.hobo-web.co.uk/best-screen-size/</a></p>
+      <p>Mere om fysiske størrelser: <br/>
+      <a href="https://gs.statcounter.com/">https://gs.statcounter.com/</a></p>
+    </footer>
   </body>
 </html>
