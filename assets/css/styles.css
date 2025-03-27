@@ -116,7 +116,7 @@ li {
   color: var(--lightgreen);
   text-decoration: none;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px 10px 0.4rem 10px;
 }
 #headerNav a:hover {
   color: #eeeeee;
@@ -234,6 +234,7 @@ footer {
 /* #endregion */
 
 /* #region media queries */
+/* region screen */
 
 /* #region tablet */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -274,6 +275,7 @@ footer {
 @media screen and (max-width: 768px) {
   #header {
     position: relative;
+    box-shadow: none;
   }
 
   #headerImg {
@@ -282,6 +284,7 @@ footer {
     height: auto;
     z-index: 1;
   }
+
   #headerNav {
     position: sticky;
     top: 0;
@@ -290,8 +293,9 @@ footer {
   }
   #headerLogo {
     position: relative;
+    top: 10%;
     display: block;
-    margin: 0 0 0 10px; /* Centers the logo */
+    margin: 0 10px 10px 10px; /* Centers the logo */
     width: 50%; /* Adjust logo size */
     height: 9vh;
     z-index: 1000;
@@ -302,20 +306,29 @@ footer {
     align-items: flex-start; /* Align to the left */
     padding: 0;
     margin: 0;
+    gap: 0rem;
+    margin-bottom: 0;
     list-style: none;
     background-color: #385c95;
   }
 
   #headerNav li {
-    /* padding: 5px 10px;  */
     font-size: 0.9rem; /* Make text smaller */
     width: 100%; /* Prevent uneven widths */
     border-bottom: 1px solid white;
+    margin: 0;
+    gap: 0;
   }
-
+  #headerNav li:last-of-type {
+    border-bottom: none;
+  }
   #headerNav a {
     display: block;
     padding: 8px 10px; /* Reduce extra space */
+  }
+  #headerNav li:hover {
+    color: #eeeeee;
+    background-color: var(--lightblue);
   }
   h1 {
     font-size: 40pt;
